@@ -1,0 +1,80 @@
+@import '../../styles/style.scss';
+
+.trainers {
+
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: black;
+}
+
+.trainers .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.trainers .box-container .box {
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.trainers .box-container .box:hover .content {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.trainers .box-container .box img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $light-bg;
+    padding: 2rem;
+    transform: translateY(6.5rem);
+
+    span {
+        font-size: 1.5rem;
+        color: $red;
+    }
+
+    h3 {
+        font-size: 2rem;
+        color: $white;
+        padding-top: .5rem;
+    }
+
+    .share {
+        padding-top: 2rem;
+        margin-top: 1.5rem;
+        border-top: .1rem solid $light-white;
+
+        a {
+            font-size: 2rem;
+            color: $white;
+            margin-right: 1.5rem;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}

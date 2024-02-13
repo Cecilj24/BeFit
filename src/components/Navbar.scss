@@ -1,0 +1,47 @@
+@import '../styles/style.scss';
+
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: $border;
+    z-index: 1000;
+    background: $black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+
+        .logo {
+            font-weight: bolder;
+            color: $white;
+            font-size: 3rem;
+
+            span {
+                color: $red;
+                font-size: 2rem;
+            }
+        }
+
+        .navbar a {
+            display: inline-block;
+            padding: 1.5rem 2rem;
+            font-size: 1.7rem;
+            color: $white;
+
+
+
+            &:hover {
+                background: $red;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@import '../../styles/style.scss';
+
+
+
+.home {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    // padding: 40px;
+    // background-color: black;
+
+    img {
+        background-size: cover;
+        background-position: center;
+        margin-top: 5%;
+        // padding-top: 20%;
+    }
+
+
+    .flex {
+        display: flex;
+        position: relative;
+
+
+    }
+
+
+
+
+}
+
+
+
+.btn {
+
+    padding-top: 16px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: $white;
+    border-radius: 9999px;
+    color: white;
+    background: $red;
+    font-size: 12px;
+    line-height: 45.94px;
+}
+
+.textbox {
+    color: white;
+    padding: 20px;
+    border-radius: 1px;
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+
+
+
+    span {
+
+        font-size: 2rem;
+        color: $red;
+        display: block;
+    }
+
+    .h3 {
+
+        font-size: 4rem;
+        color: $white;
+        padding: 1rem 0;
+        // gap: 8rem;
+    }
+
+
+}
